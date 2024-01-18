@@ -1,0 +1,129 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Varela Round', sans-serif;
+
+}
+
+.App{
+  background-image: url("./assets/clear.jpg");
+  background-size: cover;
+  transition: 0.4s ease-out;
+  background-position: bottom;
+}
+
+.App.cloudy
+{
+  background-image: url('./assets/cloudy.jpg');
+  transition: 0.4s ease-out;
+}
+
+.App.thunder
+{
+  background-image: url('./assets/thunderstorm.jpg');
+  transition: 0.4s ease-out;
+}
+
+.App.snowy
+{
+  background-image: url('./assets/snow.jpg');
+  transition: 0.4s ease-out;
+}
+
+.App.mist{
+  background-image: url('./assets/mist.jpg');
+  transition: 0.4s ease-out;
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+  padding: 40px;
+}
+
+.search-bar{
+  width: 100%;
+  margin-bottom: 60px;
+  /* margin-left: 33%; */
+}
+
+.search{
+  width: 70%;
+  padding: 20px;
+  display: block;
+
+  appearance: none;
+  outline: none;
+  margin: none;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  border-radius: 25px 25px 25px 25px;
+  margin-top: -30px;
+  
+  box-shadow: 0px 8px rgba(0, 0, 0, 0.3);
+
+  color: #313131;
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+
+.search:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.location-card .loc, .date {
+  color: #FFF;
+  font-weight: 500;
+  font-size: 54px;
+  text-align: left;
+  text-shadow: 3px 3px rgba(50,50,50,0.5);
+}
+
+.date{
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.weather-box{
+  margin: 0;
+  padding: 0;
+  height: 320px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.weather-box .temp{
+  margin: -10px ;
+  margin-bottom: -41px;
+  position: relative;
+  /* display: flex;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 16px 16px; */
+
+  color: #FFF;
+
+  font-weight: 800;
+  font-style: bold;
+  font-size: 200px;
+  
+  text-shadow: 8px 8px rgba(50,50,50,0.9);
+
+}
+
+.weather{
+  margin: 0px 40px;
+  /* transform: rotate(90deg); */
+  color: #FFF;
+  font-size: 70px;
+  font-weight: 500;
+  text-shadow: 6px 6px rgba(50,50,50, 0.9);
+}
+
+
